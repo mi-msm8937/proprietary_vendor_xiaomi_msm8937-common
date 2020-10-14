@@ -188,7 +188,7 @@ android_app_import {
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "xiaomi",
-	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "ril/product/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -199,7 +199,7 @@ android_app_import {
 android_app_import {
 	name: "datastatusnotification",
 	owner: "xiaomi",
-	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
+	apk: "ril/product/app/datastatusnotification/datastatusnotification.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -210,7 +210,7 @@ android_app_import {
 android_app_import {
 	name: "embms",
 	owner: "xiaomi",
-	apk: "proprietary/product/app/embms/embms.apk",
+	apk: "ril/product/app/embms/embms.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -267,7 +267,7 @@ android_app_import {
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "ril/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
