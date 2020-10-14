@@ -65,10 +65,10 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsdm-disp-vndapis.so"],
+			srcs: ["graphics_sdm/vendor/lib/libsdm-disp-vndapis.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
+			srcs: ["graphics_sdm/vendor/lib64/libsdm-disp-vndapis.so"],
 		},
 	},
 	compile_multilib: "both",
