@@ -221,7 +221,7 @@ android_app_import {
 android_app_import {
 	name: "imssettings",
 	owner: "xiaomi",
-	apk: "proprietary/product/app/imssettings/imssettings.apk",
+	apk: "ims/product/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -232,7 +232,7 @@ android_app_import {
 android_app_import {
 	name: "uceShimService",
 	owner: "xiaomi",
-	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
+	apk: "ims/product/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -255,7 +255,7 @@ android_app_import {
 android_app_import {
 	name: "ims",
 	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
+	apk: "ims/product/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
