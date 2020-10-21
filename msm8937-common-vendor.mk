@@ -23,6 +23,13 @@ $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-graph
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-graphics_sdm.mk)
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-perf_configs.mk)
 
+$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-ims_p.mk)
+$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-ims_q.mk)
+$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-qmi_p.mk)
+$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-qmi_q.mk)
+$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-ril_p.mk)
+$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-ril_q.mk)
+
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/xiaomi/msm8937-common/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
@@ -480,10 +487,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     PowerOffAlarm \
     QtiTelephonyService \
-    datastatusnotification \
-    embms \
-    imssettings \
-    uceShimService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
