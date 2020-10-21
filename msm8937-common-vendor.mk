@@ -18,13 +18,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/msm8937-common
 
 # Inherit fragments
-$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-ims.mk)
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-gpu_firmware.mk)
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-graphics.mk)
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-graphics_sdm.mk)
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-perf_configs.mk)
-$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-qmi.mk)
-$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-ril.mk)
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
