@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter ugg ugglite ulysse,$(TARGET_DEVICE)),)
+ifneq ($(filter ugg ugglite ulysse riva,$(TARGET_DEVICE)),)
 
 endif
