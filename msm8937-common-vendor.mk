@@ -492,3 +492,26 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     WfdCommon \
     chargeonlymode
+
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_fail.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_fail.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_image_0.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_image_0.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_image_1.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_image_1.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_image_2.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_image_2.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_image_3.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_image_3.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_image_4.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_image_4.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_image_5.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_image_5.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_image_6.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_image_6.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_image_7.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_image_7.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_0.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_0.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_10.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_10.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_1.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_1.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_2.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_2.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_3.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_3.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_4.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_4.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_5.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_5.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_6.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_6.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_7.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_7.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_8.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_8.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_num_9.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_num_9.png \
+    vendor/xiaomi/msm8937-common/proprietary/res/charger/battery_scale.png:$(TARGET_COPY_OUT_SYSTEM)/res/charger/battery_scale.png
