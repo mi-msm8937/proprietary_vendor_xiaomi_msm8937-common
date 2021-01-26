@@ -25,6 +25,7 @@ $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-graph
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-perf_configs.mk)
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-qmi.mk)
 $(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-ril.mk)
+$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor-tissot_ril.mk)
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
