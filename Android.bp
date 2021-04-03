@@ -233,7 +233,8 @@ prebuilt_etc_xml {
 cc_prebuilt_binary {
 	name: "chargeonlymode",
 	owner: "xiaomi",
-	srcs: ["proprietary/bin/chargeonlymode"],
+	srcs: ["proprietary/vendor/bin/chargeonlymode"],
 	prefer: true,
+	soc_specific: true,
 }
 
