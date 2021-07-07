@@ -689,5 +689,4 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     WfdCommon \
     android.hardware.gnss@2.0-service-qti \
-    vendor.qti.gnss@3.0-service \
-    chargeonlymode
+    vendor.qti.gnss@3.0-service
