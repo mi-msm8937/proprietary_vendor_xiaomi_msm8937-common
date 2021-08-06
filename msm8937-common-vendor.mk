@@ -146,6 +146,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/bin/chargeonlymode:$(TARGET_COPY_OUT_VENDOR)/bin/chargeonlymode \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/xiaomi/msm8937-common/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
@@ -247,12 +248,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/etc/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/etc/perf/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile1.conf \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
-    vendor/xiaomi/msm8937-common/proprietary/vendor/etc/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
-    vendor/xiaomi/msm8937-common/proprietary/vendor/etc/perf/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile1.conf \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/msm8937-common/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -370,7 +371,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
-    vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
@@ -580,7 +580,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_common_so.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csi.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
-    vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/xiaomi/msm8937-common/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
@@ -690,10 +689,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
     vendor/xiaomi/msm8937-common/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/xiaomi/msm8937-common/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
-    vendor/xiaomi/msm8937-common/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
-
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/msm8937-common/proprietary/bin/chargeonlymode:$(TARGET_COPY_OUT_SYSTEM)/bin/chargeonlymode \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_fail.png \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_image_0.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_0.png \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_image_1.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_1.png \
@@ -704,8 +700,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_image_6.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_6.png \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_image_7.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_7.png \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_num_0.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_0.png \
-    vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_num_10.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_10.png \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_num_1.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_1.png \
+    vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_num_10.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_10.png \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_num_2.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_2.png \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_num_3.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_3.png \
     vendor/xiaomi/msm8937-common/proprietary/vendor/res/charger/battery_num_4.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_4.png \
@@ -719,9 +715,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaudio_log_utils \
     libgpustats \
+    libqmiservices \
     libsdm-disp-vndapis \
     libthermalclient \
     libtime_genoff \
+    libts_detected_face_hal \
+    libts_face_beautify_hal \
     libloc_api_v02 \
     WfdService \
     CneApp \
