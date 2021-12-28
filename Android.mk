@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter land riva rolex santoni tiare ulysse landtoni prada rova ulova,$(TARGET_DEVICE)),)
+ifneq ($(filter mi8937 land riva rolex santoni tiare ulysse landtoni prada rova ulova,$(TARGET_DEVICE)),)
 
 endif
